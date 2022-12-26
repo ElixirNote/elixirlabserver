@@ -257,7 +257,7 @@ class WatchHelper(Process):
             if not buf:
                 return
 
-            self.logger.info(buf.decode("utf-8"), end="")
+            self.logger.info(buf.decode("utf-8"))
 
     def _create_process(self, **kwargs):
         """Create the watcher helper process."""
